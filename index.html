@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">EURO 2020 Form Survey</h1>
+            <p id="description" class="description text-center">We Are The People</p>
+        </header>
+
+        <form id="survey-form">
+            <div class="form-group">
+                <label for="name" id="name-label">Name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="name" id="email-label">Email</label>
+                <input type="email" id="email" name="surname" placeholder="Enter your Email" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="name" id="number-label">Age <span class="clue">(Optional)</span></label>
+                <input type="number" id="number" name="age" placeholder="Age" class="form-control" min="10" max="99">
+            </div>
+
+            <div class="form-group">
+                <p>What group-stage match are you most excited to watch?</p>
+                <select name="role" id="dropdown" class="form-control" required>
+                    <option disabled selected value="">Select a fixture</option>
+                    <option value="Group A">Italy vs Wales</option>
+                    <option value="Group B">Belgium vs Denmark</option>
+                    <option value="Group C">Netherlands vs Austria</option>
+                    <option value="Group D">England vs Croatia</option>
+                    <option value="Group E">Spain vs Sweden</option>
+                    <option value="Group F">France vs Germany</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p> Pick an underdog to make a deep run.</p>
+                <label ><input type="radio" class="input-radio" value="denmark" name="user-recommend">Denmark</label>
+                <label ><input type="radio" class="input-radio" value="turkey"  name="user-recommend">Turkey</label>
+                <label ><input type="radio" class="input-radio" value="finland"  name="user-recommend">Finland</label>
+                <label ><input type="radio" class="input-radio" value="slovakia"  name="user-recommend">Slovakia</label>
+                <label ><input type="radio" class="input-radio" value="hungary"  name="user-recommend">Hungary</label>
+            </div>
+
+            <div class="forn-group">
+                <p> Pick a young player (21 or younger) that will make an impact.</p>
+                <select name="mostLike" id="most-like" class="form-conttrol" required>
+                    <option disabled selected value="">Select one player</option>
+                    <option value="Alexander">Alexander Isak</option>
+                    <option value="Foden">Phil Foden</option>
+                    <option value="Pedri">Pedri</option>
+                    <option value="Doku">Jérémy Doku</option>
+                    <option value="Jude">Jude Bellingham</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>Which team to win the European Champion finals?</p>
+                <label><input type="checkbox" name="prefer" class="input-checkbox" value="austria">Austria</label>
+                <label><input type="checkbox" name="prefer" class="input-checkbox" value="italy">Italy</label>
+                <label><input type="checkbox" name="prefer" class="input-checkbox" value="wales">Wales</label>
+                <label><input type="checkbox" name="prefer" class="input-checkbox" value="switzerland">Switzerland</label>
+                <label><input type="checkbox" name="prefer" class="input-checkbox" value="turkey">Turkey</label>
+                <label><input type="checkbox" name="prefer" class="input-checkbox" value="belgium">Belgium</label>
+                <label><input type="checkbox" name="prefer" class="input-checkbox" value="denmark">Denmark</label>
+                <label><input type="checkbox" name="prefer" class="input-checkbox" value="finland">Finland</label>
+                <label><input type="checkbox" name="prefer" class="input-checkbox" value="russia">Russia</label>
+                <label><input type="checkbox" name="prefer" class="input-checkbox" value="netherlands">Netherlands</label>
+                <label><input type="checkbox" name="prefer" class="input-checkbox" value="england">England</label>
+                <label><input type="checkbox" name="prefer" class="input-checkbox" value="spain">Spain</label>
+                <label><input type="checkbox" name="prefer" class="input-checkbox" value="france">France</label>
+                <label><input type="checkbox" name="prefer" class="input-checkbox" value="germany">Germany</label>
+                <label><input type="checkbox" name="prefer" class="input-checkbox" value="portugal">Portugal</label>
+            </div>
+
+            <div class="form-group">
+                <p>Any comments or suggestion?</p>
+                <textarea name="comment" id="comments" class="input-textarea" placeholder="Enter comment here"></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
